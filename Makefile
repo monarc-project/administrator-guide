@@ -7,7 +7,7 @@ html: prepare
 
 pdf: prepare
 	asciidoctor -r asciidoctor-pdf -b pdf *.adoc \
-		-o $(OUTPUT)/pdf/technical-guide.pdf
+		-o $(OUTPUT)/pdf/administrator-guide.pdf
 
 prepare:
 	mkdir -p $(OUTPUT)

@@ -1,0 +1,37 @@
+== Management of the clients
+
+=== List the current clients
+
+image:list-clients.png[List the current clients, align="center"]
+
+=== Create a new client
+
+A client is always associated to a front office server, *FO-1* in the picture
+below.
+
+image:create-client.png[Create a new client, align="center"]
+
+The creation of a new client will result in the generation of a JSON file on
+the back office server (in the folder
+``/var/lib/monarc/bo/MonarcAppBO/data/json/create/``).
+
+The newly created JSON file contains the required information for the deployment
+of the new MONARC instance.
+
+The inventory of clients for the ansible playbook is kept up-to-date by
+link:https://github.com/monarc-project/ansible-ubuntu/blob/master/playbook/update.sh[a script]
+supposed to be launched periodically with cron.
+The cron task should be run by a dedicated user (for example _ansible_) on the
+configuration server.  +
+As you can see the script ``update.sh`` checks for client(s) to create or to
+delete on the back office through SSH. If needed, the ansible inventory is
+updated. Then the ansible playbook is executed.
+
+
+The creation of a new client will result in:
+
+- the generation of a Apache Virtual Host;
+- the generation of a database for the client;
+- the generation of a MONARC configuration file
+  (in ``/var/www/<client-alias>/``);
+- the update of the reverse proxy (``/etc/apache2/client_redirection`` file).
