@@ -57,17 +57,7 @@ link:https://github.com/monarc-project/administrator-guide/pulls[pull request]
 with a fix.
 ====
 
-
-== Introduction
-
-The link:https://github.com/monarc-project/MonarcAppBO[back office]
-is the component that lets you manage:
-
-- the front office servers;
-- the clients (front office instances);
-- the MONARC models;
-- the access of users to the back office.
-
+include::{includedir}/introduction.adoc[]
 
 include::{includedir}/servers.adoc[]
 

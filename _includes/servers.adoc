@@ -11,4 +11,5 @@ image:create-FO-server.png[Create a new front office server, align="center"]
 A front office can host one or more clients.
 
 All clients on a front office server share the same application source code.
-An Apache Virtual Host is dedicated to each clients.
+An Apache Virtual Host is associated to each clients (with dedicated environment
+variables, configuration file, databases and logs).

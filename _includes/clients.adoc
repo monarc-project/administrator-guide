@@ -30,8 +30,30 @@ updated. Then the ansible playbook is executed.
 
 The creation of a new client will result in:
 
-- the generation of a Apache Virtual Host;
+- the generation of an Apache Virtual Host with dedicated environment variables;
 - the generation of a database for the client;
-- the generation of a MONARC configuration file
+- the generation of a configuration file for MONARC
   (in ``/var/www/<client-alias>/``);
-- the update of the reverse proxy (``/etc/apache2/client_redirection`` file).
+- the update of the reverse proxy (``/etc/apache2/client_redirection`` file);
+- the update of the
+  link:https://github.com/monarc-project/ansible-ubuntu/blob/master/playbook/monarcfo/templates/backup_db.j2[database backup script]
+  on each front office servers.
+
+
+=== Backup of client's databases
+
+If you want to enable the database backup script:
+
+[source,bash]
+----
+ $ mkdir -p /var/lib/mysql-backup/monarc/
+ $ sudo crontab -l
+# m h  dom mon dow   command
+30 2 * * * /usr/local/bin/backup_monarc_db.sh
+----
+
+This script will backup the databases of each clients on the front office
+server.
+
+As explained previously this script is updated after each addition/deletion of
+client(s).

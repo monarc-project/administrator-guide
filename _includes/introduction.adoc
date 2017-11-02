@@ -1,0 +1,9 @@
+== Introduction
+
+The link:https://github.com/monarc-project/MonarcAppBO[back office]
+is the component that lets you manage:
+
+- the front office servers;
+- the clients (instances of MONARC deployed on front office servers);
+- the MONARC models;
+- the access of users to the back office.
