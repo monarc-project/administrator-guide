@@ -1,0 +1,31 @@
+== Back office
+
+- management of the models:
+- management of the users on the back office:
+- front office servers;
+- clients:
+
+=== Management of the models
+
+=== Management of the front office servers
+
+A front office can host one or more clients.
+
+==== List the current front office servers
+
+image:list-FO-servers.png[List the current front office servers, align="center", scaledwidth="75%"]
+
+==== Create a new front office server
+
+image:create-FO-server.png[Create a new front office server, align="center", scaledwidth="75%"]
+
+
+=== Management of the clients
+
+==== List the current clients
+
+image:list-clients.png[List the current clients, align="center", scaledwidth="75%"]
+
+==== Create a new client
+
+image:create-client.png[Create a new client, align="center", scaledwidth="75%"]
