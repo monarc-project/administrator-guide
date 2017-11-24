@@ -2,14 +2,16 @@
 
 === List the current front office servers
 
-image:list-FO-servers.png[List the current front office servers, align="center"]
+image::list-FO-servers.png[List the current front office servers, align="center",pdfwidth=95%]
 
 === Create a new front office server
 
-image:create-FO-server.png[Create a new front office server, align="center"]
+image::create-FO-server.png[Create a new front office server, align="center",pdfwidth=95%]
 
 A front office server can host one or more clients.
 
 All clients on a front office server share the same application source code.
 An Apache Virtual Host is associated to each clients (with dedicated environment
 variables, configuration file, databases and log files).
+
+<<<

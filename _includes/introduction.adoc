@@ -1,9 +1,22 @@
 == Introduction
 
+[NOTE]
+.This document is currently under active development and discussion!
+====
+This document is intended to administrators of a MONARC instance.
+If you find errors or omissions in this document, please don't hesitate to
+submit an link:https://github.com/monarc-project/administrator-guide/issues[issue]
+or open a
+link:https://github.com/monarc-project/administrator-guide/pulls[pull request]
+with a fix.
+====
+
 The link:https://github.com/monarc-project/MonarcAppBO[back office]
 is the component that lets you manage:
 
-- the front office servers;
-- the clients (instances of MONARC deployed on front office servers);
-- the MONARC common models;
-- the access of users to the back office.
+- The front office servers;
+- The clients (instances of MONARC deployed on front office servers);
+- The MONARC common models;
+- The access of users to the back office.
+
+<<<

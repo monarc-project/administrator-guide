@@ -1,5 +1,6 @@
-= MONARC administrator's guide
-"security made in Lëtzebuerg" (SMILE) g.i.e
+= Administrator Guide
+CASES Luxembourg <info@cases.lu>
+:title-logo-image: images/header.svg
 :Date: 2017-11-02
 :Revision:  0.1
 :description: MONARC administrator's guide
@@ -36,17 +37,6 @@
 :adp: AsciiDoc Python
 :adr: Asciidoctor
 
-
-[NOTE]
-.This document is currently under active development and discussion!
-====
-This document is intended to administrators of a MONARC instance.
-If you find errors or omissions in this document, please don't hesitate to
-submit an link:https://github.com/monarc-project/administrator-guide/issues[issue]
-or open a
-link:https://github.com/monarc-project/administrator-guide/pulls[pull request]
-with a fix.
-====
 
 include::{includedir}/introduction.adoc[]
 
