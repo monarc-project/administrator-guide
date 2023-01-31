@@ -1,4 +1,4 @@
-= Administrator Gui
+= Administrator Guide
 NC3 Luxembourg <info@nc3.lu>
 v{docdate}
 :Date: 2023-01-31
