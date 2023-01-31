@@ -1,8 +1,7 @@
-= Administrator Guide
-CASES Luxembourg <info@cases.lu>
+= Administrator Gui
+NC3 Luxembourg <info@nc3.lu>
 v{docdate}
-:title-logo-image: images/header.svg
-:Date: 2017-11-02
+:Date: 2023-01-31
 :Revision:  0.1
 :description: MONARC administrator's guide
 :keywords: risk-analysis, monarc, administrator-guide
